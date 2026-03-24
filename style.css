@@ -13,27 +13,34 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
-  text-align: center;
-  overflow: visible;
+.characters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
-.container img {
-  width: 600px;
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 280px;
   height: auto;
   display: block;
   margin: 0 auto 20px auto;
-  border-radius: 12px;
+  border-radius: 16px;
   transition: transform 0.25s ease;
 }
 
-.container img:hover {
+.card img:hover {
   transform: scale(1.08);
 }
 
-.container button {
+.card button {
   padding: 12px 24px;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
   border: none;
   border-radius: 10px;

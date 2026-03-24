@@ -5,15 +5,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <img src="Rocko Face.png" alt="Rocko">
-    <button onclick="playSound()">Play Sound</button>
+  <div class="characters">
+    <div class="card">
+      <img src="Rocko Body.png" alt="Rocko Left">
+      <button onclick="playSound()">Play Sound</button>
+    </div>
+
+    <div class="card">
+      <img src="Rocko Face.png" alt="Rocko Center">
+      <button onclick="playSound()">Play Sound</button>
+    </div>
+
+    <div class="card">
+      <img src="Rocko Body 2.png" alt="Rocko Right">
+      <button onclick="playSound()">Play Sound</button>
+    </div>
+
     <audio id="mySound" src="raise-a-floppa-meow.mp3"></audio>
   </div>
 
   <script>
     function playSound() {
-      document.getElementById("mySound").play();
+      const sound = document.getElementById("mySound");
+      sound.currentTime = 0;
+      sound.play();
     }
   </script>
 </body>
