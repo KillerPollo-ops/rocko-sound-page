@@ -19,7 +19,7 @@ body {
 }
 
 .container img {
-  width: 500px;
+  width: 600px;
   height: auto;
   display: block;
   margin: 0 auto 20px auto;
@@ -28,12 +28,12 @@ body {
 }
 
 .container img:hover {
-  transform: scale(1.18);
+  transform: scale(1.08);
 }
 
 .container button {
   padding: 12px 24px;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   border: none;
   border-radius: 10px;
